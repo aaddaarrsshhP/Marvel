@@ -1,0 +1,93 @@
+.info-container{
+    
+/* From https://css.glass */
+
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(60px);
+-webkit-backdrop-filter: blur(60px);
+border: 1px solid rgba(255, 255, 255, 0.31);
+padding: 2rem 2rem 2rem 2rem;
+
+}
+
+.character-info-middle{
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem 1rem 1rem 4rem;
+    border-radius: 2%;
+}
+
+.character-info-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.character-info-1 > h4{
+    color: black;
+}
+
+.character-info-1 > h4 > a{
+    color: red;
+}
+
+.scroll-container{
+    display: flex;
+    column-gap: 2rem;
+    width: 1230px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    
+}
+
+.scroll-container::-webkit-scrollbar{
+    display: none;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    padding-top: 2rem;
+    
+    
+    
+}
+
+h2{
+    color: black;
+}
+
+.character-info-upper{
+    padding: 1rem 1rem 0.5rem 1rem;
+    display: flex;
+    column-gap: 3rem;
+    background-color: white;
+    border-radius: 2%;
+}
+
+.character-info-lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 3%;
+   
+}
+
+.character-info-lower > button{
+    
+    border-radius: 30%;
+    padding-top: 5px;
+    height: 50rem;
+    width: 2rem;
+    color: black;
+    background: url('/marvel-1641554_1280.jpg');
+}

@@ -1,0 +1,179 @@
+.characters-container{
+
+    padding: 2.5rem 1.9rem 2rem 1.9rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 5rem;
+    row-gap: 2rem;
+  
+    
+    
+}
+
+
+
+
+.characters-card{
+     background-color: white;
+     color: black;
+     padding-top: 20px;
+     border: solid 1px black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;    
+     border-radius: 5px;
+     cursor: pointer;
+     z-index: 1;
+    
+}
+
+
+ .characters-card-img{
+  
+    height: 200px;
+    transform: translateY(0);
+    transition: transform 150ms ease-in-out;
+     cursor: pointer;
+}
+
+.characters-card-img:hover{
+
+    transform: translateY(-10px);
+    
+}
+
+
+h5{
+    color: black;
+}
+
+.characters-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    background-color: none;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    
+    
+    
+    
+
+    
+}
+
+.characters-card-title > h5{
+   
+    margin-top: 1.3rem;
+    color: black;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characters-card-title::after{
+    position: absolute;
+    content: '';
+    background: rgba(163, 0, 0, 0.7);
+    height: 5%;
+    width: 100%;
+    left: 0;
+
+    
+}
+
+.characters-card-title:hover::after{
+   
+    animation: col 150ms forwards;
+
+}
+
+@keyframes col {
+    from{height: 1%}
+    to{height: 100%}
+    
+}
+
+.page-title-img{
+    width: 100%;
+    height: 24rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: black;
+    box-shadow: 15p 15px grey;
+    position: relative;
+    
+    
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page-title-img > h1{
+    position: absolute;
+    color: white;
+    top: 10rem;
+    left: 8rem;
+}
+
+.page-title-img > button{
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: 15rem;
+    left: 10rem;
+    transform: skew(10deg);
+    height: 2.5rem;
+    width: 6rem;
+    transition: transform 150ms ease-in-out;
+}
+
+.page-title-img > button:hover{
+
+    transform: skew(-10deg);
+}
+
+
+@media  screen and (max-width: 1150px){
+    
+    .characters-container{
+      grid-template-columns: repeat(4,1fr);
+      row-gap: 2rem;
+    }   
+  }
+  
+
+  @media  screen and (max-width: 910px){
+    
+    .characters-container{
+      grid-template-columns: repeat(3,1fr);
+      row-gap: 2rem;
+    }
+    
+    .page-title-img > button{
+        left: 5rem;
+    }
+
+    .page-title-img > h1{
+        left: 3rem;
+    }
+  }  
+
+  @media  screen and (max-width: 680px){
+    
+    .characters-container{
+      grid-template-columns: repeat(2,1fr);
+      row-gap: 2rem;
+    }   
+  }

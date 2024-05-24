@@ -1,0 +1,224 @@
+header{
+    box-shadow: 2.5px 2.5px grey;
+}
+
+
+button{
+    border: none;
+    background: none;
+    text-decoration: none;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    background-color: rgb(5, 22, 32);
+    padding-left: 1rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+
+}
+
+.vibhajan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+
+
+.logo-button{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo-button > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color: rgb(5, 22, 32);;
+    width: 90rem;
+    margin-top: 5px;
+    margin-left: -42em;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity 250ms ease-in-out,transform 350ms ease-in-out;
+    box-shadow: 2.5px 2.5px grey;
+    color: white;
+}
+
+.character-button{
+
+    position: relative;
+    display: flex;
+    
+    margin-right: 1vh;
+    margin-top: 0px;
+
+}
+
+.character-button::after{
+    position: absolute;
+    content: '';
+    background: whitesmoke;
+    height: 2.5px;
+    left: 3px;
+    bottom: -3px;
+    
+}
+
+.character-button:hover::after{
+    animation: line 1s forwards ;
+}
+
+@keyframes line {
+    from{width: 0px}
+    to{width: 100%;}
+}
+
+
+
+.dropdown.active > .home-button + .dropdown-menu{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+    z-index: 1;
+}
+
+
+
+.characters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 280px;
+    box-shadow: 3px 3px darkgray;
+    transform: scale(1,1);
+    background-color: white;
+    color: black;
+    transition: transform 150ms ease-in-out;
+    padding: 1px 2px 1px 3px;
+    cursor: pointer;
+}
+
+.characters:hover{
+    transform: scale(1.03,1.03);
+}
+
+.imgCha{
+    width: 100%;
+    height: 75%;
+    
+}
+
+.burgerdown{
+    display: none;
+}
+
+.seeall{
+    margin-top: 7rem;
+    border: solid 1px white;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    cursor: pointer;
+    transform: scale(1,1);
+    transition: transform 150ms ease-in-out;
+}
+
+.seeall:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+
+@media screen and (max-width: 992px)
+{
+   .dropdown-menu{
+    display: none;
+   }
+
+   .home-button,.comics-button,.character-button,.series-button,.stories-button,.events-button{
+    display: none;
+   }
+
+   .burgerdown{
+    display: block;
+    color: white;
+    position: relative;
+   }
+
+   .burger-menu{
+    margin-top: 1.3rem;
+    position: absolute;
+    margin-left: -1.3rem;
+    background-color: black;
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    
+    padding-left: 1px;
+    padding-bottom: 1rem;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+   }
+
+   .burgerdown > .burger-button:focus + .burger-menu{
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 1;
+   }
+
+   
+   .nav{
+    justify-content: space-between;
+    padding-right: 3.1rem;
+   }
+
+   .responsive-button{
+    
+    transform: scale(1,1);
+    transition: transform 150ms ease-in-out;
+   }
+
+   .responsive-button:hover{
+    transform: scale(1.1,1.1);
+   }
+}

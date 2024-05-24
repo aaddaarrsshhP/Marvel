@@ -1,0 +1,159 @@
+.hom{
+    color: black;
+}
+
+.movies-card{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 9px;
+}
+
+h5,h6{
+    color: black;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h6{
+    color: rgb(134, 126, 126);
+    margin-top: -5px;
+}
+
+.movies-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 2rem;
+    padding: 0px 15px 15px 15px;
+}
+
+.movies-card-img{
+    height: 250px;
+    width: 150px;
+    transform: translateY(0);
+    transition: transform 150ms ease-in-out;
+    
+}
+
+.movies-card-img:hover{
+    transform: translateY(-5px);
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media  screen and (max-width: 1200px){
+    
+  .movies-container{
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+  }   
+}
+
+
+h1{
+    color: black;
+    display: flex;
+    margin-left: 1.1rem;
+}  
+
+.comic-news-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5px;
+    background-color: white;
+    margin-left: 45px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 2rem;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.comic-big-news-img{
+    height: 30rem;
+}
+
+.comic-big-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h4{
+    color: rgb(129, 122, 122);
+    margin-left: 1.1rem;
+   
+}
+
+a{
+    cursor: pointer;
+
+}
+a:hover > h1{
+    color: red;
+}
+
+.comic-news-2{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.comic-news-2-img{
+    height: 200px;
+    
+}
+
+a:hover > h5{
+    color: red;
+}
+
+.comic-news-2-child{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media  screen and (max-width: 700px){
+    
+    .movies-container{
+      grid-template-columns: repeat(2,1fr);
+      row-gap: 2rem;
+    }
+    
+    .comic-news-1{
+        grid-template-columns: repeat(1,1fr);
+        margin-right: 1rem;
+    }
+
+    .comic-news-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+.latest-news{
+    color: white;
+}

@@ -105,9 +105,11 @@ export const Header = () => {
           <div className='burgerdown ' data-burger-dropdown>
             <button className='burger-button' data-burger-dropdown-button><TfiMenu /></button>
             <div className='burger-menu'>
-                <button className='responsive-button'>Home</button>
+ 
+               <Link style={{textDecoration: 'none'}} to={'/characters'}>                
                 <button className='responsive-button'>Characters</button>
-                <button className='responsive-button'>Series</button>
+               </Link>
+ 
                 <button className='responsive-button'>Stories</button>
                 <button className='responsive-button'>Comics</button>
                 

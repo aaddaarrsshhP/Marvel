@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import './info.css'
-import { BsArrowLeft } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 export const CharacterInfo = () => {
 
@@ -57,7 +56,7 @@ export const CharacterInfo = () => {
           <button onClick={()=>rotateLeft()}></button>
            <div className='scroll-container'>
             <div className='grid-1'>
-              {detail[1].map((item)=><span><img src={`${item.thumbnail.path}/portrait_fantastic.jpg`}/></span>)}
+              {detail[1].map((item)=><span key={item.id}><Link to={`/comicbuy/${item.id}`}><img className='comic-img' src={`${item.thumbnail.path}/portrait_fantastic.jpg`}/></Link></span>)}
                 
             </div>
 

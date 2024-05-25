@@ -67,7 +67,7 @@ export const Header = () => {
           <div className='vibhajan'>  
                   
             <div className='dropdown' data-dropdown>  
-            <button className='home-button character-button' data-dropdown-button>Characters</button>
+            <button className='home-button character-button' data-dropdown-button>CHARACTERS</button>
             <div className='dropdown-menu character-menu'>
             <Link to={`/characters/info/${charac ? charac[0].id : 0}`}>
                <div className='characters'>
@@ -92,13 +92,42 @@ export const Header = () => {
                </div>
                </Link> 
                <Link style={{textDecoration: 'none'}} to='/characters'>
-                <h4 className='seeall'>See All</h4>
+                <h4 className='seeall'>SEE ALL</h4>
                 </Link>
             </div>
          </div>
-           
-            <button className='series-button'>Stories</button>
-            <button className='stories-button'>Comics</button>
+           <div className='dropdown' data-dropdown>
+              <button className='home-button' data-dropdown-button>TV SHOWS</button> 
+            <div className='dropdown-menu'>
+              <div className='tvshows-upper'>
+                <img className='imgCha' src='https://cdn.marvel.com/content/1x/lokis2_lob_crd_04.jpg'/>
+                <h5>Loki | Season 2</h5>
+              </div>
+              <div className='tvshows-upper'>
+                <img className='imgCha' src='https://cdn.marvel.com/content/1x/whatifs2_lob_crd_02.jpg'/>
+                <h5>What if ?...| Season 2</h5>
+              </div>
+              <div className='tvshows-upper'>
+                <img className='imgCha' src='https://cdn.marvel.com/content/1x/echo_lob_crd_02.jpg'/>
+                <h5>Echo</h5>
+              </div>
+            </div>
+           </div>
+
+           <div className='dropdown' data-dropdown>
+             <button className='home-button' data-dropdown-button>MORE</button>
+             <div className='dropdown-menu'>
+                <div className='more-container'>
+                  
+                     <h1>LIFESTYLE</h1>
+                     <h1>ROLE-PLAYING GAMES</h1>
+                     <h1>BOOKS</h1>
+                     <h1>PODCASTS</h1>
+                     <h1>SHOP</h1>
+                </div>
+             </div>
+            </div>  
+            
             
         </div>
          <div>  

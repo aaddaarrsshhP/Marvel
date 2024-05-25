@@ -1,0 +1,62 @@
+.comic-container{
+    margin-top: 5rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.description-container{
+
+    width: 45vw;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-descrip > h5 > label{
+ 
+    margin-right: 3px;
+    color: white;
+}
+
+.title-descrip > h5{
+    color: white;
+}
+
+.title-descrip > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    align-items: center;
+    padding: .5rem 0 .5rem 0;
+    background-color: darkred;
+    
+}
+
+
+
+.title-descrip > button:hover{
+    background-color: rgb(146, 15, 15);
+    
+}
+
+.title-descrip > button:active{
+    background-color: rgb(233, 35, 35);
+}
+
+@media screen and (max-width: 936px){
+ 
+ .description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }   
+
+}

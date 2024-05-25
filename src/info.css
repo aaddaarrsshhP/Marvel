@@ -91,3 +91,12 @@ h2{
     color: black;
     background: url('/marvel-1641554_1280.jpg');
 }
+
+.comic-img{
+    cursor: pointer;
+    transition: transform 250ms linear;
+}
+
+.comic-img:hover{
+    transform: translateY(-10px);
+}

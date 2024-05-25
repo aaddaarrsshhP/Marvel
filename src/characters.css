@@ -17,7 +17,7 @@
      background-color: white;
      color: black;
      padding-top: 20px;
-     border: solid 1px black;
+     border: solid 1px white;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -78,17 +78,24 @@ h5{
 .characters-card-title::after{
     position: absolute;
     content: '';
-    background: rgba(163, 0, 0, 0.7);
+    background: rgb(5, 22, 32);
     height: 5%;
     width: 100%;
     left: 0;
-
+    z-index: -1;
     
 }
 
 .characters-card-title:hover::after{
    
     animation: col 150ms forwards;
+
+}
+
+
+.characters-card-title:hover > h5{
+   
+    color: white;
 
 }
 

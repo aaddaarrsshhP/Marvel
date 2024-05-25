@@ -6,6 +6,7 @@ import { Home } from './Home'
 import { Characters } from './Characters'
 import { CharacterInfo } from './CharacterInfo'
 import { Footer } from './Footer'
+import { ComicBuy } from './ComicBuy'
 
 export const Routing = () => {
   
@@ -13,8 +14,9 @@ export const Routing = () => {
   return (
     <Routes>
         <Route path='/' element={<><Header /><CoverImage /><Home /><Footer /></>}/>
-        <Route path='/characters' element={<><Header /><Characters /></>}/>
-        <Route path='/characters/info/:id' element={<><Header /><CharacterInfo /></>}/>
+        <Route path='/characters' element={<><Header /><Characters /><Footer /></>}/>
+        <Route path='/characters/info/:id' element={<><Header /><CharacterInfo /><Footer /></>}/>
+        <Route path='/comicbuy/:id' element={<><Header /><ComicBuy /><Footer /></>}/>
     </Routes>
   )
 }

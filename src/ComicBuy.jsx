@@ -14,7 +14,7 @@ export const ComicBuy = () => {
         
     async function apiCall()
     {
-        const res=await axios.get(`http://gateway.marvel.com/v1/public/comics/${id}?ts=1716185690191&apikey=1b10e2ed1095046c6f5876df3d550e5e&hash=c74a3b6955068357357be1b5db1f0f82`);
+        const res=await axios.get(`https://gateway.marvel.com/v1/public/comics/${id}?ts=1716185690191&apikey=1b10e2ed1095046c6f5876df3d550e5e&hash=c74a3b6955068357357be1b5db1f0f82`);
         const data=await res.data
         setDetail(data.data.results[0]);
     }

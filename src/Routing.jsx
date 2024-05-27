@@ -7,6 +7,7 @@ import { Characters } from './Characters'
 import { CharacterInfo } from './CharacterInfo'
 import { Footer } from './Footer'
 import { ComicBuy } from './ComicBuy'
+import { Searchbar } from './Searchbar'
 
 export const Routing = () => {
   
@@ -17,6 +18,7 @@ export const Routing = () => {
         <Route path='/characters' element={<><Header /><Characters /><Footer /></>}/>
         <Route path='/characters/info/:id' element={<><Header /><CharacterInfo /><Footer /></>}/>
         <Route path='/comicbuy/:id' element={<><Header /><ComicBuy /><Footer /></>}/>
+        <Route path='/search' element={<Searchbar />}/>
     </Routes>
   )
 }

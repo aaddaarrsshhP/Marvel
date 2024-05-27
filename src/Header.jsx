@@ -3,12 +3,15 @@ import axios from 'axios'
 import './header.css'
 import { TfiMenu } from "react-icons/tfi";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Header = () => {
 
 
    
-   const [charac,setCharac]=useState(null)    
+   const [charac,setCharac]=useState(null)
+   const navigate=useNavigate();    
    console.log(charac);
     useEffect(()=>{
 
@@ -127,7 +130,10 @@ export const Header = () => {
                 </div>
              </div>
             </div>  
-            
+
+            <div className='search-icon' onClick={()=>navigate('/search')}>
+                 <img src='/search.png'/>
+          </div>  
             
         </div>
          <div>  
@@ -141,6 +147,7 @@ export const Header = () => {
  
                 <button className='responsive-button'>Stories</button>
                 <button className='responsive-button'>Comics</button>
+                <button className='responsive-button search-button' onClick={()=>navigate('/search')}><img src='/search.png'/></button>
                 
             </div>
           </div>

@@ -1,12 +1,13 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './characters.css'
+import { Link } from 'react-router-dom'
 
 export const Characters = () => {
 
     const [characters,setCharacters]=useState(null)
     const data=characters ? characters.map((item,key)=><>
-               
+     <Link to={`/characters/info/${item.id}`}>          
       <div className='characters-card'>
           <div className='characters-card-img'>
           <img className='img' src={`${item.thumbnail.path}/portrait_xlarge.jpg`}/>
@@ -15,6 +16,7 @@ export const Characters = () => {
           <h5>{item.name}</h5>
           </div>
          </div>
+      </Link>  
     </>) : ''
    
     console.log(data);

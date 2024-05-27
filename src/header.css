@@ -204,12 +204,31 @@ button{
     transform: scale(1.1,1.1);
 }
 
+.search-icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.search-icon > img{
+    width: 100%;
+    height: 100%;
+    transition: transform 125ms linear;
+}
+
+.search-icon:hover > img{
+    transform: scale(1.4,1.4);
+}
+
+
 
 @media screen and (max-width: 992px)
 {
-   .dropdown-menu{
+   .dropdown-menu,.search-icon{
     display: none;
    }
+
+
 
    .home-button,.comics-button,.character-button,.series-button,.stories-button,.events-button{
     display: none;
@@ -262,5 +281,15 @@ button{
 
    .responsive-button:hover{
     transform: scale(1.1,1.1);
+   }
+
+   .search-button{
+    width: 35px;
+    height: 30px;
+   }
+
+   .search-button > img{
+    width: 100%;
+    height: 100%;
    }
 }

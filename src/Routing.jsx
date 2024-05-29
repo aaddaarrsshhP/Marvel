@@ -17,7 +17,7 @@ export const Routing = () => {
         <Route path='/' element={<><Header /><CoverImage /><Home /><Footer /></>}/>
         <Route path='/characters' element={<><Header /><Characters /><Footer /></>}/>
         <Route path='/characters/info/:id' element={<><Header /><CharacterInfo /><Footer /></>}/>
-        <Route path='/comicbuy/:id' element={<><Header /><ComicBuy /></>}/>
+        <Route path='/comicbuy/:id' element={<><Header /><ComicBuy /><Footer /></>}/>
         <Route path='/search' element={<Searchbar />}/>
     </Routes>
   )

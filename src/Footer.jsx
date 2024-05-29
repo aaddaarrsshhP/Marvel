@@ -45,7 +45,7 @@ export const Footer = () => {
                 <AiFillPinterest />
                 <AiFillTwitterCircle />
               </div>
-              <div className='icons'>
+              <div className='icons icons2'>
                 <BsChatQuoteFill />
                 <FaSnapchatGhost />
                 <FaYoutube />

@@ -1,17 +1,12 @@
 .footer{
    margin-top: 10px;
    background-color: white;
-   
+  
    
 }
 
-.grid-footer > div{
-    display: flex;
-    flex-direction: column;
-    
-    
-    align-items: center;
-    
+
+.about{
 
 }
 
@@ -45,13 +40,15 @@
 }
 
 .logo > div{
-    width: 115px;
-    height: 90px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo > div > img{
-    width: 100%;
-    height: 100%;
+    width: 115px;
+    height: 90px;
 }
 
 .in-un-container{
@@ -64,16 +61,22 @@
 }
 
 .icons{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    column-gap: 3rem;
+    
     background-color: rgb(160, 17, 17);
+    
+    
+    display: flex;
+    column-gap: 3rem;
+}
+
+.icons2{
+    margin-left: 2rem;
 }
 
 .follow-icons{
-    justify-content: center;
-   }
+    display: flex;
+    flex-direction: column;
+}
 
  .footer-section-2{
   
